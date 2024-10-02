@@ -72,23 +72,23 @@ function changeImage(car) {
     setTimeout(function() {
         switch (car) {
             case 'dacia':
-                imageElement.src = '/images/Dacia-Symbol.png';
+                imageElement.src = 'images/Dacia-Symbol.png';
                 imageElement.alt = 'National Dacia Dealers';
                 break;
             case 'hyundai':
-                imageElement.src = '/images/logo-hyundai.gif';
+                imageElement.src = 'images/logo-hyundai.gif';
                 imageElement.alt = 'Hyundai';
                 break;
             case 'peugeot':
-                imageElement.src = '/images/peugeot-logo.png';
+                imageElement.src = 'images/peugeot-logo.png';
                 imageElement.alt = 'Peugeot';
                 break;
             case 'opel':
-                imageElement.src = '/images/opel-logo1.png';
+                imageElement.src = 'images/opel-logo1.png';
                 imageElement.alt = 'Opel';
                 break;
             default:
-                imageElement.src = '/images/flux-e-transportator.svg';
+                imageElement.src = 'images/flux-e-transportator.svg';
                 imageElement.alt = 'ecosistemul SmartPORT';
         }
 
