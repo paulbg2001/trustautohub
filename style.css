@@ -395,3 +395,23 @@ h3 {font-size: 22px; font-weight: 600; line-height: 34px;}
     animation-play-state: paused !important;
 }
 
+.box {background: rgba(255,255,255,0.95); aspect-ratio: 1/1; transition: .2s; position: relative; overflow: hidden;}
+.box h2 {padding: 10px 0px 0 0px; color: #333; font-weight: 600; font-size: 26px; line-height: 32px; transition: .2s;}
+.box p {padding: 0 0px 10px 0px; opacity: 0; transition: .3s; font-size: 16px;}
+.box .corner {position: absolute; z-index: 800; width: 250px; height: 50px; bottom: -20px; right: -246px; background: #15ABC3;transform: skew(0deg, 0deg); border-left: 15px solid #15ABC3; transition: .3s; color: #ffffff;}
+.box .link {position: absolute; z-index: 801; bottom: 5px; right: -170px; color: rgba(255,255,255,0.2); font-size: 14px; transition: .25s;}
+.box .link > i {font-size: 12px; margin-left: 5px;}
+.box > .thumb {
+    width: 100%;
+    aspect-ratio: 8/6;
+    overflow: hidden; transition: .3s;
+}
+.box > .thumb img {transition: transform .4s; transform: scale(1.3)}
+.box > .txt {aspect-ratio: 8/2; transition: .3s;}
+.box:hover .thumb {aspect-ratio: 8/4;}
+.box:hover .thumb img {transform: scale(1.5)}
+.box:hover > .txt {aspect-ratio: 8/4;}
+.box:hover h2 {color: #000;}
+.box:hover p {opacity: 1; color: #333;}
+.box:hover .corner {right: -120px; bottom: -20px; border-left: 4px solid #c31560; transform: skew(-30deg, 0deg); background: #c31560;}
+.box:hover .link { bottom: 5px; right: 10px; color: #fff;}
